@@ -46,14 +46,14 @@ new class extends Component
 ?>
 
 <div>
-      <flux:heading size="lg" level="1">記事編集ページ</flux:heading>
+      <flux:heading size="xl" level="1" class="mb-5">記事編集ページ</flux:heading>
 
 
 
     <form wire:submit="update" class="space-y-6">
         <flux:input wire:model='title' label="タイトル" placeholder="記事のタイトルを入力" />
         <flux:textarea wire:model='body' label="本文" placeholder="本文を入力" />
-        <div class="flex justify-end">
+        <div class="flex justify-end gap-2">
             <flux:button href="{{ route('my-posts') }}" wire:navigate>
                 キャンセル
             </flux:button>

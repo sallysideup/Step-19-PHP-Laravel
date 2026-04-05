@@ -33,7 +33,7 @@ new #[Title("記事一覧ページ")] #[Layout("layouts.guest")]class extends Co
 ?>
 
 <div class="space-y-4">
-    <flux:heading size="lg" level="1">記事一覧ページ</flux:heading>
+    <flux:heading size="xl" level="1" class="mb-5">記事一覧ページ</flux:heading>
     <div class="flex justify-between items-center mb-6 gap-4 mt-6">
         <flux:input wire:model.live="search" icon="magnifying-glass" class="w-64" placeholder="タイトルで検索"/>
 
