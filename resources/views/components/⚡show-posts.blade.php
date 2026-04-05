@@ -42,8 +42,16 @@ new #[Title("記事一覧ページ")] #[Layout("layouts.guest")]class extends Co
             <flux:button href="{{ route('posts.create') }}" wire:navigate variant="primary">
                 新規作成
             </flux:button>
+
         @endauth
+
     </div>
+    <div class="flex justify-end">
+        <flux:button href="{{ route('dashboard') }}" wire:navigate variant="outline">
+            TOPへ
+        </flux:button>
+    </div>
+
 
     @foreach ($posts as $post)
         <article class="p-4 shadow-lg">
